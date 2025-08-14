@@ -11,9 +11,35 @@ Shader "Unlit/MyFirstTransparent"
 
         Pass
         {
+            // Src = Source
+                // Frag shader
+            // Dst = Destination
+                // Render Target
+            // (Src * A)   [op]   (Dst * B)
+            
+            // Blend One One / Additive
+            // (Src * 1) + (Dst * 1) 
+            
+            // Blend DstColor Zero // Multiplicative
+            // (Src * DstColor) + (Dst * 0)
+            
+            //Blend DstColor SrcColor // 2X Multiplicative
+            // (Src * DstColor) + (Dst * SrcColor)
+            
+            // Blend SrcAlpha OneMinusSrcAlpha // Traditional
+            // (Src * SrcAlpha) + (Dst * OneMinusSrcAlpha)
+            
+            // Blend OneMinusDstColor One // Soft Additive
+            // (Src * 1-Dst) + (Dst * 1)
+            
+            
             ZWrite Off
-            //Blend One One // Additive
-            Blend SrcAlpha OneMinusSrcAlpha // Traditional transparency
+            // BlendOp RevSub // Dst - Src
+            //BlendOp Sub // Src - Dst
+            //Blend One One
+            //Blend Zero One
+            // Blend One One // Additive
+             Blend SrcAlpha OneMinusSrcAlpha // Traditional transparency
             
             CGPROGRAM
             #pragma vertex vert
