@@ -30,13 +30,13 @@ Material:
     m_Ints: []
     m_Floats:
     - _Amplitude: 3.8
-    - _Glossiness: 0.5
-    - _Metallic: 0
+    - _Glossiness: 0.526
+    - _Metallic: 0.622
     - _Speed: 20.2
     - _Steepness: 0.077
     - _Wavelength: 18.1
     m_Colors:
-    - _Color: {r: 0.23802702, g: 0.21800463, b: 0.6698113, a: 1}
+    - _Color: {r: 0.2873869, g: 0.26713243, b: 0.8207547, a: 1}
     - _Direction: {r: 8.74, g: -9.48, b: 0, a: 0}
     - _WaveA: {r: 1, g: 1, b: 0.25, a: 60}
     - _WaveB: {r: 1, g: 0.6, b: 0.25, a: 31}
